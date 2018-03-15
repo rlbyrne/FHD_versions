@@ -949,16 +949,32 @@ pro rlb_fhd_versions
       n_pol = 2
     end
     
+    'rlb_4pol_sim_fullpol_Mar2018': begin
+      recalculate_all = 1
+      max_sources = 200000
+      calibration_catalog_file_path = '/home/ubuntu/sim_cal_catalog.sav'
+      gain_factor = 0.1
+      deconvolve = 1
+      return_decon_visibilities = 1
+      deconvolution_filter = 'filter_uv_uniform'
+      filter_background = 1
+      return_cal_visibilities = 1
+      diffuse_calibrate = 0
+      diffuse_model = 0
+      cal_bp_transfer = 0
+      rephase_weights = 0
+      restrict_hpx_inds = 0
+      hpx_radius = 20
+      return_sidelobe_catalog = 1
+      dft_threshold = 0
+      ring_radius = 0
+      write_healpix_fits = 1
+      debug_region_grow = 0
+      n_pol = 4
+      remove_sim_flags = 1 ;should be used for simulation
+    end
+    
   endcase
-  
-  if ~keyword_set(vis_file_list) and keyword_set(instrument) then begin
-    if instrument eq 'hera' then begin
-      vis_file_list = '/nfs/eor-00/h1/rbyrne/HERA_analysis/zen.2458042.'+obs_id+'.xx.HH.uvR.uvfits'
-      if obs_id eq '38650' then begin
-        vis_file_list = '/nfs/eor-00/h1/rbyrne/HERA_analysis/zen.2458042.'+obs_id+'.yy.HH.uvR.uvfits'
-      endif
-    endif
-  endif
   
   if ~keyword_set(vis_file_list) then begin
     if platform eq 'aws' then begin
