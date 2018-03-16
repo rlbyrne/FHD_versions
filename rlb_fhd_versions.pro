@@ -950,7 +950,7 @@ pro rlb_fhd_versions
     end
     
     'rlb_4pol_sim_fullpol_Mar2018': begin
-      recalculate_all = 1
+      recalculate_all = 0
       max_sources = 200000
       calibration_catalog_file_path = '/home/ubuntu/sim_cal_catalog.sav'
       gain_factor = 0.1
