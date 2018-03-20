@@ -543,6 +543,7 @@ pro rlb_fhd_versions
     end
     
     'rlb_GLEAM+Fornax_cal_decon_4pol_Jan2018': begin
+      recalculate_all = 1
       uvfits_version = 5
       uvfits_subversion = 1
       max_sources = 200000
