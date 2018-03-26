@@ -1,4 +1,4 @@
-PRO rlb_fhd_sim_versions
+PRO fhd_sim_versions_rlb
 
   except=!except
   !except=0
