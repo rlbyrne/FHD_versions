@@ -1071,7 +1071,7 @@ pro fhd_versions_rlb
       ring_radius = 0
       debug_region_grow = 0
       n_pol = 2
-      in_situ_sim_input = '/uvfits/fhd_rlb_phaseI_ref_for_sim_Mar2018'
+      in_situ_sim_input = '/uvfits/input_vis'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
     end
@@ -1098,7 +1098,7 @@ pro fhd_versions_rlb
       ring_radius = 0
       debug_region_grow = 0
       n_pol = 2
-      in_situ_sim_input = '/uvfits/fhd_rlb_phaseII_ref_for_sim_Mar2018'
+      in_situ_sim_input = '/uvfits/input_vis'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
     end
