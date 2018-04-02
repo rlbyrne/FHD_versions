@@ -957,6 +957,7 @@ pro fhd_versions_rlb
       smooth_width = 32
       filter_background = 1
       return_cal_visibilities = 1
+      min_cal_baseline = 0.
       pad_uv_image = 1
       diffuse_calibrate = 0
       diffuse_model = 0
@@ -984,6 +985,7 @@ pro fhd_versions_rlb
       smooth_width = 32
       filter_background = 1
       return_cal_visibilities = 1
+      min_cal_baseline = 0.
       pad_uv_image = 1
       diffuse_calibrate = 0
       diffuse_model = 0
