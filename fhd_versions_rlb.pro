@@ -958,6 +958,9 @@ pro fhd_versions_rlb
       filter_background = 1
       return_cal_visibilities = 1
       min_cal_baseline = 0.
+      cal_mode_fit = 0
+      calibration_polyfit = 0
+      digital_gain_jump_polyfit = 0
       pad_uv_image = 1
       diffuse_calibrate = 0
       diffuse_model = 0
@@ -986,6 +989,9 @@ pro fhd_versions_rlb
       filter_background = 1
       return_cal_visibilities = 1
       min_cal_baseline = 0.
+      cal_mode_fit = 0
+      calibration_polyfit = 0
+      digital_gain_jump_polyfit = 0
       pad_uv_image = 1
       diffuse_calibrate = 0
       diffuse_model = 0
