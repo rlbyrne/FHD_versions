@@ -901,114 +901,6 @@ pro fhd_versions_rlb
       remove_sim_flags = 1 ;should be used for simulation
     end
     
-    'rlb_phaseI_ref_for_sim_Mar2018': begin
-      recalculate_all = 1
-      uvfits_version = 4
-      uvfits_subversion = 1
-      max_sources = 200000
-      calibration_catalog_file_path = filepath('GLEAM_plus_rlb2017.sav',root=rootdir('FHD'),subdir='catalog_data')
-      smooth_width = 32
-      filter_background = 1
-      return_cal_visibilities = 1
-      pad_uv_image = 1
-      diffuse_calibrate = 0
-      diffuse_model = 0
-      cal_bp_transfer = 0
-      rephase_weights = 0
-      restrict_hpx_inds = 0
-      hpx_radius = 10
-      return_sidelobe_catalog = 1
-      dft_threshold = 0
-      ring_radius = 0
-      debug_region_grow = 0
-      n_pol = 2
-    end
-    
-    'rlb_phaseII_ref_for_sim_Mar2018': begin
-      recalculate_all = 1
-      uvfits_version = 4
-      uvfits_subversion = 1
-      max_sources = 200000
-      calibration_catalog_file_path = filepath('GLEAM_plus_rlb2017.sav',root=rootdir('FHD'),subdir='catalog_data')
-      smooth_width = 32
-      filter_background = 1
-      return_cal_visibilities = 1
-      pad_uv_image = 1
-      diffuse_calibrate = 0
-      diffuse_model = 0
-      cal_bp_transfer = 0
-      rephase_weights = 0
-      restrict_hpx_inds = 0
-      hpx_radius = 10
-      return_sidelobe_catalog = 1
-      dft_threshold = 0
-      ring_radius = 0
-      debug_region_grow = 0
-      n_pol = 2
-    end
-    
-    'rlb_phaseI_Barry_effect_sim_Mar2018': begin
-      recalculate_all = 1
-      uvfits_version = 4
-      uvfits_subversion = 1
-      max_sources = 200000
-      max_calibration_sources = 4000
-      calibration_catalog_file_path = filepath('GLEAM_plus_rlb2017.sav',root=rootdir('FHD'),subdir='catalog_data')
-      smooth_width = 32
-      filter_background = 1
-      return_cal_visibilities = 1
-      min_cal_baseline = 0.
-      cal_mode_fit = 0
-      calibration_polyfit = 0
-      digital_gain_jump_polyfit = 0
-      pad_uv_image = 1
-      diffuse_calibrate = 0
-      diffuse_model = 0
-      cal_bp_transfer = 0
-      rephase_weights = 0
-      restrict_hpx_inds = 0
-      hpx_radius = 10
-      return_sidelobe_catalog = 1
-      dft_threshold = 0
-      ring_radius = 0
-      debug_region_grow = 0
-      n_pol = 2
-      in_situ_sim_input = '/uvfits/input_vis'
-      remove_sim_flags = 1 ;turn off flagging for simulation
-      sim_over_calibrate = 1 ;calibrate each fine frequency independently
-    end
-    
-    'rlb_phaseII_Barry_effect_sim_Mar2018': begin
-      recalculate_all = 1
-      uvfits_version = 5
-      uvfits_subversion = 1
-      max_sources = 200000
-      max_calibration_sources = 4000
-      calibration_catalog_file_path = filepath('GLEAM_plus_rlb2017.sav',root=rootdir('FHD'),subdir='catalog_data')
-      smooth_width = 32
-      filter_background = 1
-      return_cal_visibilities = 1
-      min_cal_baseline = 0.
-      cal_mode_fit = 0
-      calibration_polyfit = 0
-      digital_gain_jump_polyfit = 0
-      pad_uv_image = 1
-      diffuse_calibrate = 0
-      diffuse_model = 0
-      cal_bp_transfer = 0
-      rephase_weights = 0
-      restrict_hpx_inds = 0
-      hpx_radius = 10
-      return_sidelobe_catalog = 1
-      dft_threshold = 0
-      ring_radius = 0
-      debug_region_grow = 0
-      n_pol = 2
-      in_situ_sim_input = '/uvfits/input_vis'
-      remove_sim_flags = 1 ;turn off flagging for simulation
-      sim_over_calibrate = 1 ;calibrate each fine frequency independently
-    end
-    
     'rlb_GLEAM+Fornax_cal_decon_2pol_Mar2018': begin
       recalculate_all = 1
       uvfits_version = 5
@@ -1063,6 +955,7 @@ pro fhd_versions_rlb
       in_situ_sim_input = '/uvfits/input_vis'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
+      cal_time_average = 0 ;don't average over time before calibrating
     end
     
     'rlb_phaseII_Barry_effect_sim_max_bl_100_Apr2018': begin
@@ -1092,6 +985,7 @@ pro fhd_versions_rlb
       in_situ_sim_input = '/uvfits/input_vis'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
+      cal_time_average = 0 ;don't average over time before calibrating
     end
     
     'rlb_phaseI_ref_for_sim_Apr2018': begin
@@ -1187,6 +1081,7 @@ pro fhd_versions_rlb
       unflag_all = 1
       nfreq_avg = 384 ; speed things up by using one beam for all frequencies
       model_delay_filter = 1 ; delay filter the model visibilities to get rid of the cyclic beam errors
+      cal_time_average = 0 ;don't average over time before calibrating
     end
     
     'rlb_phaseII_Barry_effect_sim_Apr2018': begin
@@ -1222,6 +1117,7 @@ pro fhd_versions_rlb
       unflag_all = 1
       nfreq_avg = 384 ; speed things up by using one beam for all frequencies
       model_delay_filter = 1 ; delay filter the model visibilities to get rid of the cyclic beam errors
+      cal_time_average = 0 ;don't average over time before calibrating
     end
     
     'rlb_phaseI_Barry_effect_sim_nocal_Apr2018': begin
