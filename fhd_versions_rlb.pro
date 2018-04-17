@@ -1213,7 +1213,7 @@ pro fhd_versions_rlb
       recalculate_all = 0
       uvfits_version = 5
       uvfits_subversion = 1
-      max_sources = 200000
+      max_sources = 400000
       calibrate_visibilities = 0 ;turn off calibration
       model_catalog_file_path = filepath('GLEAM_plus_rlb2017.sav',root=rootdir('FHD'),subdir='catalog_data')
       gain_factor = 0.1
