@@ -1343,6 +1343,7 @@ pro fhd_versions_rlb
       debug_region_grow = 0
       n_pol = 4
       time_cut = -4 ;flag an extra 4 seconds from the end of each obs
+      vis_file_list = '/Users/Shared/uvfits/5.1/'+string(obs_id)+'.uvfits'
     end
     
   endcase
