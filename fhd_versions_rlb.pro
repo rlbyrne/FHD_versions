@@ -1324,7 +1324,7 @@ pro fhd_versions_rlb
       max_sources = 200000
       calibration_catalog_file_path = filepath('GLEAM_plus_rlb2017.sav',root=rootdir('FHD'),subdir='catalog_data')
       gain_factor = 0.1
-      deconvolve = 1
+      deconvolve = 0  ; removed for rerunning
       return_decon_visibilities = 1
       deconvolution_filter = 'filter_uv_uniform'
       filter_background = 1
@@ -1343,7 +1343,6 @@ pro fhd_versions_rlb
       debug_region_grow = 0
       n_pol = 4
       time_cut = -4 ;flag an extra 4 seconds from the end of each obs
-      vis_file_list = '/Users/Shared/uvfits/5.1/'+string(obs_id)+'.uvfits'
     end
     
     'rlb_diffuse_survey_decon_2pol_May2018': begin
