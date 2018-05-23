@@ -1458,7 +1458,7 @@ pro fhd_versions_rlb
       ring_radius = 0
       debug_region_grow = 0
       n_pol = 2
-      in_situ_sim_input = '/Users/rubybyrne/array_simulation/fhd_rlb_array_sim_reference_May2018/vis_data'
+      in_situ_sim_input = '/Users/rubybyrne/array_simulation/fhd_rlb_array_sim_reference_May2018'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
       debug_beam_clip_floor = 1
