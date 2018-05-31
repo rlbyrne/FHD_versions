@@ -1401,7 +1401,7 @@ pro fhd_versions_rlb
       n_pol = 4
     end
     
-    'rlb_array_sim_reference_May2018': begin
+    'rlb_hex_array_sim_reference_May2018': begin
       recalculate_all = 1
       uvfits_version = 5
       uvfits_subversion = 1
