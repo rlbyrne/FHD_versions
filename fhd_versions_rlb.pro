@@ -1429,7 +1429,7 @@ pro fhd_versions_rlb
       return_cal_visibilities = 0
       nfreq_avg = 384 ; speed things up by using one beam for all frequencies
       model_delay_filter = 1 ; delay filter the model visibilities to get rid of the cyclic beam errors
-      vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
+      ;vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
     end
     
     'rlb_hex_array_Barry_effect_sim_May2018': begin
@@ -1458,7 +1458,8 @@ pro fhd_versions_rlb
       ring_radius = 0
       debug_region_grow = 0
       n_pol = 2
-      in_situ_sim_input = '/Users/rubybyrne/array_simulation/fhd_rlb_array_sim_reference_May2018'
+      ;in_situ_sim_input = '/Users/rubybyrne/array_simulation/fhd_rlb_array_sim_reference_May2018'
+      in_situ_sim_input = '/uvfits/input_vis'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
       debug_beam_clip_floor = 1
@@ -1466,7 +1467,7 @@ pro fhd_versions_rlb
       nfreq_avg = 384 ; speed things up by using one beam for all frequencies
       model_delay_filter = 1 ; delay filter the model visibilities to get rid of the cyclic beam errors
       cal_time_average = 0 ;don't average over time before calibrating
-      vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
+      ;vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
     end
     
     'rlb_random_array_sim_reference_May2018': begin
@@ -1497,7 +1498,7 @@ pro fhd_versions_rlb
       return_cal_visibilities = 0
       nfreq_avg = 384 ; speed things up by using one beam for all frequencies
       model_delay_filter = 1 ; delay filter the model visibilities to get rid of the cyclic beam errors
-      vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
+      ;vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
     end
     
     'rlb_random_array_Barry_effect_sim_May2018': begin
@@ -1526,7 +1527,8 @@ pro fhd_versions_rlb
       ring_radius = 0
       debug_region_grow = 0
       n_pol = 2
-      in_situ_sim_input = '/Users/rubybyrne/array_simulation/fhd_rlb_random_array_sim_reference_May2018'
+      ;in_situ_sim_input = '/Users/rubybyrne/array_simulation/fhd_rlb_random_array_sim_reference_May2018'
+      in_situ_sim_input = '/uvfits/input_vis'
       remove_sim_flags = 1 ;turn off flagging for simulation
       sim_over_calibrate = 1 ;calibrate each fine frequency independently
       debug_beam_clip_floor = 1
@@ -1534,7 +1536,7 @@ pro fhd_versions_rlb
       nfreq_avg = 384 ; speed things up by using one beam for all frequencies
       model_delay_filter = 1 ; delay filter the model visibilities to get rid of the cyclic beam errors
       cal_time_average = 0 ;don't average over time before calibrating
-      vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
+      ;vis_file_list = '/Users/rubybyrne/array_simulation/'+string(obs_id)+'.uvfits'
     end
     
   endcase
